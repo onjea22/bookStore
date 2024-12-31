@@ -16,9 +16,9 @@ class BillTest {
     @Test
     void getLibrarian_Name() {
         Bill bill = new Bill();
-        bill.setLibrarian_Name("Era");
+        bill.setLibrarian_Name("Juna");
         String actual = bill.getLibrarian_Name();
-        assertEquals("Era", actual);
+        assertEquals("Juna", actual);
 
     }
 
@@ -50,8 +50,8 @@ class BillTest {
     void getBook_name() {
         Bill bill = new Bill();
         ArrayList<String> bookNames = new ArrayList<>();
-        bookNames.add("Era");
-        bookNames.add("Greisi");
+        bookNames.add("Juna");
+        bookNames.add("Sara");
         bill.setBook_name(bookNames);
         ArrayList<String> actual = bill.getBook_name();
         assertEquals(bookNames, actual);
@@ -74,17 +74,17 @@ class BillTest {
     @Test
     void getName() {
         Bill bill = new Bill();
-        bill.setName("Era");
+        bill.setName("Juna");
         String actual = bill.getName();
-        assertEquals("Era", actual);
+        assertEquals("Juna", actual);
     }
 
     @Test
     void getSurname() {
         Bill bill = new Bill();
-        bill.setSurname("Mulla");
+        bill.setSurname("Dako");
         String actual = bill.getSurname();
-        assertEquals("Mulla", actual);
+        assertEquals("Dako", actual);
     }
 
 
