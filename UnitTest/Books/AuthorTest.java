@@ -12,31 +12,31 @@ class AuthorTest {
 
     @Test
     void getFirstName() {
-        Author author = new Author("Greisi");
-        assertEquals("Greisi", author.getFirstName());
+        Author author = new Author("Sara");
+        assertEquals("Sara", author.getFirstName());
         assertNotNull(author.getFirstName());
     }
 
     @Test
     void setFirstName() {
-        Author author = new Author("Greisi");
-        author.setFirstName("Era");
+        Author author = new Author("Sara");
+        author.setFirstName("Juna");
         String actual = author.getFirstName();
-        assertEquals("Era",actual );
+        assertEquals("Juna",actual );
     }
 
     @Test
     void getLastName() {
-        Author author = new Author("Greisi", "Jaho", Gender.Female);
-        assertEquals("Jaho", author.getLastName());
+        Author author = new Author("Sara", "Onjea", Gender.Female);
+        assertEquals("Onjea", author.getLastName());
         assertNotNull( author.getLastName());
     }
 
     @Test
     void setLastName() {
-        Author author = new Author("Greisi", "Jaho", Gender.Female);
-        author.setLastName("Jaho");
-        assertEquals("Jaho", author.getLastName());
+        Author author = new Author("Sara", "Onjea", Gender.Female);
+        author.setLastName("Onjea");
+        assertEquals("Onjea", author.getLastName());
     }
 
     @Test
@@ -48,7 +48,7 @@ class AuthorTest {
 
     @Test
     void setGender() {
-        Author author = new Author("Greisi", "Jaho", Gender.Female);
+        Author author = new Author("Sara", "Onjea", Gender.Female);
         author.setGender(Gender.Female);
         assertEquals(Gender.Female, author.getGender());
     }
