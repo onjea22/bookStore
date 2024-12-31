@@ -1,7 +1,5 @@
 package Test.UnitTest.LogIn;
 
-
-
 import com.example.Model.Login.AccessLevel;
 import com.example.Model.Login.LogInFunctionalities;
 import com.example.Model.Login.ResultType;
