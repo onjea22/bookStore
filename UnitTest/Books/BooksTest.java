@@ -100,7 +100,7 @@ class BooksTest {
 
     @Test
     void getAuthor() {
-        Author author = new Author("Era","Mulla", Gender.Female);
+        Author author = new Author("Nidia","Fino", Gender.Female);
         Books book = new Books();
         book.setAuthor(author);
         Author author1 = book.getAuthor();
@@ -128,9 +128,9 @@ class BooksTest {
         book.setQuanity(5);
         book.setDescription("B");
         book.setPrice(25.0);
-        book.setAuthor(new Author("Era","Mulla",gender));
+        book.setAuthor(new Author("Nidia","Fino",gender));
         book.setPaperback(true);
-        assertEquals(new Books("A","1",5,"B",25.0,new Author("Era","Mulla",gender), true ),book);
+        assertEquals(new Books("A","1",5,"B",25.0,new Author("Nidia","Fino",gender), true ),book);
 
     }
 
